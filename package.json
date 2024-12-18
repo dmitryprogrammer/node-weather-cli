@@ -6,6 +6,9 @@
     "build": "npx tsc src/index.ts",
     "test": "npx jest"
   },
+  "bin": {
+    "weather-cli": "./dist/index.js"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",
