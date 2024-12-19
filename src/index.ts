@@ -1,9 +1,9 @@
-import { program } from "commander";
+import { Connector } from "./db/connector";
 
-program.option("--first").option("-s, --separator <char>");
+const connection = new Connector();
 
-program.parse();
-
-console.log(program.args);
-
-console.log(process.argv);
+connection.getTaskToDb("Test");
+connection.writeTaskToDb({
+  title: "Test",
+  id: 1,
+});
