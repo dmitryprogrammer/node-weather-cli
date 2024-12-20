@@ -4,7 +4,8 @@
   "scripts": {
     "start:dev": "npx nodemon",
     "build": "npx tsc src/index.ts",
-    "test": "npx jest"
+    "test": "npx jest",
+    "prettier": "prettier . --write"
   },
   "bin": {
     "weather-cli": "./dist/index.js"

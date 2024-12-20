@@ -1,5 +1,5 @@
-import { readFile, writeFile } from "fs/promises";
-import { join } from "path";
+import {readFile, writeFile} from "fs/promises";
+import {join} from "path";
 
 export type Task = {
   id: number;
@@ -23,7 +23,7 @@ export class Connector {
       const result = await writeFile(
         this.dbPath,
         JSON.stringify(task),
-        "utf-8"
+        "utf-8",
       );
       console.log(result);
     } catch (error) {

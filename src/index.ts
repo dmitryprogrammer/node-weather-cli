@@ -1,4 +1,4 @@
-import { Connector } from "./db/connector";
+import {Connector} from "./db/connector";
 
 const connection = new Connector();
 

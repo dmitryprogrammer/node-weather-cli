@@ -1,5 +1,5 @@
-import { ACTION_NAMES } from "./actions";
-import { Connector } from "./db/connector";
+import {ACTION_NAMES} from "./actions";
+import {Connector} from "./db/connector";
 
 class Tasks<Connector, ActionNames> {
   private connection;
@@ -11,4 +11,3 @@ class Tasks<Connector, ActionNames> {
 }
 
 export const tasks = new Tasks<Connector, ACTION_NAMES>(new Connector());
-
